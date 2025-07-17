@@ -9,7 +9,6 @@
     <Authors>Brennon Oliveira</Authors>
     <Company>BranaOS</Company>
     <Product>Opus UseCases</Product>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>Direitos autorais (c) Brennon Oliveira 2025</Copyright>
@@ -20,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="LICENSE" Pack="true" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
     <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
