@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BranaOS.Opus.Core" Version="1.0.2" />
+    <PackageReference Include="BranaOS.Opus.Core" Version="1.0.5" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
   </ItemGroup>
 
