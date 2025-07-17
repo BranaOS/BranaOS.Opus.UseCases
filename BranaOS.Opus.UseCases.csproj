@@ -10,6 +10,7 @@
     <Company>BranaOS</Company>
     <Product>Opus UseCases</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>Direitos autorais (c) Brennon Oliveira 2025</Copyright>
     <PackageProjectUrl>https://github.com/BranaOS/BranaOS.Opus.UseCases</PackageProjectUrl>
@@ -19,11 +20,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="LICENSE" Pack="true" />
     <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BranaOS.Opus.Core" Version="1.0.0" />
+    <PackageReference Include="BranaOS.Opus.Core" Version="1.0.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
   </ItemGroup>
 
