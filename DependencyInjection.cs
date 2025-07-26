@@ -16,7 +16,7 @@ public static class DependencyInjection
       {
         var cur = type.IsGenericType ? type.GetGenericTypeDefinition() : type;
 
-        if (cur == typeof(IUseCase<,>))
+        if (cur == typeof(UseCase<,>))
         {
           return true;
         }
