@@ -23,7 +23,7 @@ public class UseCaseDispatcher(IServiceProvider _serviceProvider) : IUseCaseDisp
     var pipelines = _serviceProvider.GetServices(pipelineType).Cast<dynamic>();
 
     Func<Task<Result<TResponse>>> next = () =>
-      (Task<Result<TResponse>>)handler.GetType().GetMethod("Handle")!.Invoke(handler, [request])!;
+      (Task<Result<TResponse>>)handler.GetType().GetMethod("Execute")!.Invoke(handler, [request])!;
 
     foreach (var pipeline in pipelines.Reverse())
     {
