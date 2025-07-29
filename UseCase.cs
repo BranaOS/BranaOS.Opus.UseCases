@@ -74,7 +74,7 @@ public abstract class UseCase<TRequest, TResponse>
     return Task.FromResult(Result.Ok(response));
   }
 
-  internal async Task<Result<TResponse>> Execute(TRequest request)
+  public async Task<Result<TResponse>> Execute(TRequest request)
   {
     var validationResult = await Validate(request);
 
